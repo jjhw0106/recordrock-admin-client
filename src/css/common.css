@@ -1,0 +1,31 @@
+.table-container {
+  margin-top: 20px; /* 테이블과 헤더 사이의 간격 조정 */
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  border: 1px solid #ccc; /* 셀 테두리 스타일 */
+  padding: 8px; /* 셀 안의 내용과 테두리 사이의 간격 */
+}
+
+.custom-table th {
+  background-color: #f2f2f2; /* 헤더 배경색 */
+  color: #333; /* 헤더 텍스트 색상 */
+  font-weight: bold; /* 헤더 텍스트 굵게 */
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* 짝수 행 배경색 */
+}
+
+.custom-table tbody tr:hover {
+  background-color: #eaeaea; /* 마우스 호버 시 배경색 변경 */
+}
+.TableTitleList {
+  background-color: #d32626;
+}
