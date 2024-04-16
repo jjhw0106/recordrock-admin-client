@@ -1,6 +1,8 @@
-export function DelimiterFilter() {
-  return <button>
-    버튼 필터
+import { DelimiterFilterProps } from "../interfaces/filter.props.interface"
+
+export function DelimiterFilter(props: DelimiterFilterProps) {
+  return <button onClick={()=>props.onClick(props.condition)}>
+    {props.condition}
   </button>
 }
 

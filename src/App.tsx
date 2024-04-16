@@ -5,7 +5,7 @@ import * as filterComponents from './components/filters';
 import { getGuideLineDocs } from './api/guideLine';
 import { GuideLineDocs } from './interfaces/types.interface';
 import './css/common.css';
-import { TableTitleList } from './components/lists';
+import { CustomTableList, TableTitleList } from './components/lists';
 import { TableColumn } from './interfaces/tableColumn';
 
 function App() {
@@ -32,38 +32,17 @@ function App() {
       </header>
       <body>
         <div className=''>
-          <filterComponents.DelimiterFilter></filterComponents.DelimiterFilter>
-          <filterComponents.DelimiterFilter></filterComponents.DelimiterFilter>
+          <filterComponents.DelimiterFilter condition={"4년제"} onClick={(condition)=>console.log(`clicked!!${condition}`)}></filterComponents.DelimiterFilter>
+          <filterComponents.DelimiterFilter condition={"2년제"} onClick={(condition)=>console.log(`clicked!!${condition}`)}></filterComponents.DelimiterFilter>
           <filterComponents.SearchFilter></filterComponents.SearchFilter>
-          <TableTitleList columns={columns}></TableTitleList>
-          <ul>
-
-          </ul>
-          
-          {/* <table className='custom-table'>
-            <thead>
-              <tr className='.custom-table tbody tr:hover '>
-                <th>Delimiter</th>
-                <th>School Year</th>
-                <th>School Name</th>
-                <th>Title</th>
-                <th>File Type</th>
-                <th>Register Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              {guidelineDocs.map((doc, index) => (
-                <tr key={index}>
-                  <td>{doc.delimiter}</td>
-                  <td>{doc.schoolYear}</td>
-                  <td>{doc.schoolName}</td>
-                  <td>{doc.title}</td>
-                  <td>{doc.fileType}</td>
-                  <td>{doc.registerDate}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table> */}
+          <div className='list_type typeList'>
+            <div className="title-list-container">
+              <TableTitleList columns={columns}></TableTitleList>
+            </div>
+            <div className="data-list-container">
+              <CustomTableList dataList={guidelineDocs}></CustomTableList>
+            </div>
+          </div>
         </div>
       </body>
     </div>

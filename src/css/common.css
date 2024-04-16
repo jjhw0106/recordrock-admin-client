@@ -29,3 +29,50 @@
 .TableTitleList {
   background-color: #d32626;
 }
+
+/* .list_type.typeList  */
+.list_type.typeList .th_style {
+  display: flex;
+  justify-content: space-between;
+  border-top: 10px solid #545454;
+  border-bottom: 10px solid #E9E9E9;
+  background-color: #F8F8F8;
+  position: relative;
+  width: 90%;
+  padding: 20px;
+}
+
+.list_type .th_style {
+  display: none;
+}
+ul, ol, li, dd {
+  list-style: none;
+}
+
+.list_type.typeList {
+  margin-bottom: 24px;
+}
+
+.list_type {
+  margin-bottom: 40px;
+}
+.list_type.typeList {
+  display: flex;
+  flex-direction: column; /* 세로로 배열 */
+}
+
+.title-list-container {
+  display: flex; /* 타이틀 리스트만 수평 배열 */
+}
+
+.data-list-container {
+  width: 90%; 
+}
+
+.data-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%
+}
