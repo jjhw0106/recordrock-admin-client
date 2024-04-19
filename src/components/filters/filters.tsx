@@ -1,7 +1,9 @@
-import { DelimiterFilterProps } from "../interfaces/filter.props.interface"
+import { filterByDelimiter } from "../../features/filters/filter.features"
+import { DelimiterFilterProps } from "../../interfaces/filter.props.interface"
 
 export function DelimiterFilter(props: DelimiterFilterProps) {
   return <button onClick={()=>props.onClick(props.condition)}>
+  {/* return <button onClick={()=>props.onClick(props.condition)}> */}
     {props.condition}
   </button>
 }
@@ -12,4 +14,4 @@ export function SearchFilter() {
       <input value="input!!"></input>
     </form>
 </div>
-}
+} 

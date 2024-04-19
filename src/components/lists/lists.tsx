@@ -1,8 +1,8 @@
-import { TableColumn } from "../interfaces/tableColumn";
-import { TableTitleListProps } from "../interfaces/tableTitleList.props.interface";
-import '../css/common.css';
-import { GuideLineDocs } from "../interfaces/types.interface";
-import { ListItemProps } from "../interfaces/guideLineDocs.props.interface";
+import { TableColumn } from "../../interfaces/tableColumn";
+import { TableTitleListProps } from "../../interfaces/tableTitleList.props.interface";
+import '../../css/common.css';
+import { GuideLineDocs } from "../../interfaces/types.interface";
+import { ListItemProps } from "../../interfaces/guideLineDocs.props.interface";
 
 export function TableTitleList({columns}: TableTitleListProps) {
   return <ul className="th_style">

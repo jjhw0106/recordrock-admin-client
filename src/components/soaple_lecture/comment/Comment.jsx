@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../css/CommentStyle"
+import styles from "../../../css/CommentStyle"
 export function Comment(props) {
   return (
     <div style={styles.wrapper}>

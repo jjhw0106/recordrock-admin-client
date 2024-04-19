@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { CommentList } from './components/soaple_lecture/CommentList';
+import { CommentList } from './components/soaple_lecture/comment/CommentList';
+import { Clock } from './components/soaple_lecture/clock/Clock';
+import Accomodate from './components/soaple_lecture/counter/Accomodate';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <Accomodate></Accomodate>
     <App />
     <CommentList />
   </React.StrictMode>
