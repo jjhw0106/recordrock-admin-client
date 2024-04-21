@@ -1,5 +1,8 @@
 // import { useEffect, useState } from "react";
 
-export function filterByDelimiter(props: string) {
-  console.log(`clicked!!${props}`)
+import { getGuideLineDocsByDelimiter } from "api/guideLine";
+import { useState } from "react"
+
+export async function filterByDelimiter(delimiter: string) {
+  return await getGuideLineDocsByDelimiter(delimiter);
 } 

@@ -9,7 +9,7 @@ export function DelimiterFilter(props: DelimiterFilterProps) {
 }
 
 export function SearchFilter() {
-  return <div>
+  return <div >
     <form action="" method="get">
       <input value="input!!"></input>
     </form>
