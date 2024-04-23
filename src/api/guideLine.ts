@@ -1,4 +1,4 @@
-import { guidelineDocsData } from "./database";
+import { guidelineDocsDataset } from "./database";
 
 export async function getCalendarInfo() {
   const calendarInfo = await fetch('http://localhost:3000/calendars/centers')
@@ -9,10 +9,14 @@ export async function getCalendarInfo() {
   return calendarInfo 
 }
 
-export function getGuideLineDocs() {
-  return guidelineDocsData;
+export function getGuideLineDocsHeader() {
+  return guidelineDocsDataset.header;
+}
+
+export function getGuideLineDocsData() {
+  return guidelineDocsDataset.data;
 }
 
 export async function getGuideLineDocsByDelimiter(delimiter: string) {
-  return await guidelineDocsData.filter((document)=>document.delimiter===delimiter);
+  return await guidelineDocsDataset.data.filter((document)=>document.delimiter===delimiter);
 }

@@ -1,5 +1,6 @@
 
 export interface DelimiterFilterProps {
   condition: string;
-  onClick: (condition: string)=>void;
+  isActive: boolean;
+  onClick: (condition: string, isActive: boolean)=>void;
 }

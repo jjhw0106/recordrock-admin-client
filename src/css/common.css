@@ -83,3 +83,8 @@ ul, ol, li, dd {
   border-radius: 8px;
   box-shadow: "0px 0px 4px grey";
 }
+
+button.active {
+  /* color: white; */
+  font-weight: 700
+}
